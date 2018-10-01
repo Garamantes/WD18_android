@@ -5,6 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlue">#2196F3</color>
+    <color name="colorDarkGray">#A9A9A9	</color>
+    <color name="colorLimegreen">#32CD32</color>
 
     <drawable name="bg_select">#2196F3</drawable>
     <drawable name="bg">#EEEEEE</drawable>

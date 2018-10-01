@@ -1,11 +1,13 @@
 package com.example.choejunhyeog.test1;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 //import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -64,7 +66,10 @@ public class MainActivity1 extends AppCompatActivity {
         button3.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                EditText editText=(EditText)findViewById(R.id.edittext);
+                Intent intent=new Intent(MainActivity1.this,SubActivity.class);
+                intent.putExtra("text",String.valueOf(editText.getText()));     //입력된 문자열을 다른 액티비티로 전달할때 putExtra()이용
+                startActivity(intent);      //엑티비티 전환시 이용
 
             }
         });
