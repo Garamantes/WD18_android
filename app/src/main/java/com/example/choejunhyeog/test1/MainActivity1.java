@@ -67,7 +67,7 @@ public class MainActivity1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 EditText editText=(EditText)findViewById(R.id.edittext);
-                Intent intent=new Intent(MainActivity1.this,SubActivity.class);
+                Intent intent=new Intent(MainActivity1.this,BottomNavActivity.class);
                 intent.putExtra("text",String.valueOf(editText.getText()));     //입력된 문자열을 다른 액티비티로 전달할때 putExtra()이용
                 startActivity(intent);      //엑티비티 전환시 이용
 
