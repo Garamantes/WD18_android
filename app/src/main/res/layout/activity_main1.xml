@@ -55,14 +55,14 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Change Image"
+            android:text="Go to Recycler View!"
             android:background="@drawable/button_selector"/>
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Change Activity!!"
+            android:text="Go to Bottom Navigation!!"
             android:background="@drawable/button_selector1"/>
 
         <EditText

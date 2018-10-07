@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.graphics.Color;
 
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -66,6 +68,13 @@ public class MainActivity1 extends BaseActivity {
                 textView1.setTextColor(color);
 
                 view.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+
+                Intent intent=new Intent(MainActivity1.this,MainActivity2.class);
+                //intent.putStringExtra("text");
+                //intent.putExtra("ture",true);
+                startActivity(intent);      //엑티비티 전환시 이용
+                Log.e("MainActivity1", "error, 에러로그, 빨강");
+
 
             }
         });

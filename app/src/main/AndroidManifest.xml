@@ -19,8 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".BottomNavActivity" />
+        <activity android:name=".BottomNavActivity" />
+        <activity android:name=".MainActivity2"></activity>
     </application>
 
 </manifest>
