@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -8,21 +9,43 @@
     android:orientation="vertical"
     tools:context="com.example.choejunhyeog.test1.BottomNavActivity">
 
-    <FrameLayout
-        android:id="@+id/box_fragment"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/nav_bottom"
-        android:layout_alignParentTop="true" />
+        android:orientation="vertical">
 
-    <!--Intent 출력 부분-->
-    <TextView
-        android:id="@+id/sub_text2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"/>
+        <!--툴바 추가 코드-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <!--Intent 출력 부분-->
+        <TextView
+            android:id="@+id/sub_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <FrameLayout
+            android:id="@+id/box_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/nav_bottom"
+            android:layout_alignParentTop="true">
+
+        </FrameLayout>
 
 
+    </LinearLayout>
+
+
+    <!--Bottom Nav 출력 부분-->
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/nav_bottom"
         android:layout_width="match_parent"
@@ -32,6 +55,8 @@
         app:itemIconTint="@color/colorLimegreen"
         app:itemTextColor="@color/colorLimegreen"
         app:menu="@menu/navigation" />
+
+
 
 </RelativeLayout>
 
