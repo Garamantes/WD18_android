@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class BlankFragment3 extends Fragment {
+public class BlankFragment3 extends BaseFragment {
 
     private TextView txtName;
 

@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 
 
-public class BlankFragment2 extends Fragment {
+public class BlankFragment2 extends BaseFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

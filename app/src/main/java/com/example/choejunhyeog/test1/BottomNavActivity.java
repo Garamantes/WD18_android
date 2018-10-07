@@ -13,7 +13,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-public class BottomNavActivity extends AppCompatActivity {
+public class BottomNavActivity extends BaseActivity {
 
     public static final String NAME_KEY = "NAME_KEY";
     private String name;
