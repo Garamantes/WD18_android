@@ -27,9 +27,16 @@ public class MainActivity1 extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main1);    //여기서 가져다 씀!!!!
 
+
         //툴바 부분
         myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+
+        //Toolbar의 왼쪽에 버튼을 추가하고 버튼의 아이콘을 바꾼다.
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_dehaze_black_24dp);
+        getSupportActionBar().setTitle("Login Page");  //해당 액티비티의 툴바에 있는 타이틀을 공백으로 처리
+
 
         //외부 클래스에서 선언한 변수를 onClick()에서 사용하기 위해 final을 부텨 줌, 이게 싫으면 해당 클래스 안에 선언할 것
         //final TextView textView1 = (TextView) findViewById(R.id.text1);
@@ -114,5 +121,7 @@ public class MainActivity1 extends BaseActivity {
             }
         });
     }
+
+
 }
 

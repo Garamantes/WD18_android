@@ -41,6 +41,11 @@ public class BottomNavActivity extends BaseActivity {
         myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
+        //Toolbar의 왼쪽에 버튼을 추가하고 버튼의 아이콘을 바꾼다.
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_dehaze_black_24dp);
+
+
         setArguments();
         initFragments();
 
@@ -54,6 +59,10 @@ public class BottomNavActivity extends BaseActivity {
         textView.setText(s);
 
         bottomNavigationView.setSelectedItemId(R.id.nav_bottom_feed);
+
+        //툴바 타이틀
+        //getSupportActionBar().setTitle(R.string.title_activity_bottom_nav);   //해당 액티비티의 툴바에 있는 타이틀을 공백으로 처리
+        getSupportActionBar().setTitle("Home");
 
     }
 
